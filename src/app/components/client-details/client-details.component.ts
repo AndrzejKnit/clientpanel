@@ -33,9 +33,7 @@ export class ClientDetailsComponent implements OnInit {
           this.hasBalance = true;
         }
       }
-
       this.client = client;
-
     });
   }
 

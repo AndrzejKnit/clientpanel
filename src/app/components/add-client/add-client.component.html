@@ -24,7 +24,7 @@
             #clientFirstName="ngModel"
             [ngClass]="{'is-invalid': clientFirstName.errors &&
             clientFirstName.touched}"
-            [(ngModel)]="firstName"
+            [(ngModel)]="client.firstName"
             minlength="2"
             required
         >
@@ -44,7 +44,7 @@
               #clientLastName="ngModel"
               [ngClass]="{'is-invalid': clientLastName.errors &&
               clientLastName.touched}"
-              [(ngModel)]="lastName"
+              [(ngModel)]="client.lastName"
               minlength="2"
               required
           >
@@ -64,7 +64,7 @@
                 #clientEmail="ngModel"
                 [ngClass]="{'is-invalid': clientEmail.errors &&
                 clientEmail.touched}"
-                [(ngModel)]="email"
+                [(ngModel)]="client.email"
                 pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                 required
             >
@@ -84,7 +84,7 @@
                   #clientPhone="ngModel"
                   [ngClass]="{'is-invalid': clientPhone.errors &&
                   clientPhone.touched}"
-                  [(ngModel)]="phone"
+                  [(ngModel)]="client.phone"
                   minlength="10"
                   required
               >
@@ -102,11 +102,11 @@
                     class="form-control"
                     name="balance"
                     #clientBalance="ngModel"
-                    [(ngModel)]="balance"
+                    [(ngModel)]="client.balance"
                     [disabled]="disableBalanceOnAdd"
                 >
               </div>
-              <input type="submit" value="onSubmit" class="btn btn-primary btn-block">
+              <input type="submit" value="Submit" class="btn btn-primary btn-block">
     </form>
   </div>
 </div>
